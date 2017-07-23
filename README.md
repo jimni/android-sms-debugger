@@ -14,3 +14,5 @@ The theoretical minimum Android version is 4.0, however, the app was only tested
 The PDUs are decoded according to [3GPP TS 23.040](https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=747) and I honestly have no idea how this will work in a non-GSM environment (e. g. CDMA).
 
 This app systematically crashes by design and has no tests whatsoever :)
+
+Your questions, requests, etc. are more than welcome in GitHub issues.
