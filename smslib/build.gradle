@@ -1,0 +1,2 @@
+configurations.maybeCreate("default")
+artifacts.add("default", file('smslib-dep-dev-20151220.150139-4-all.jar'))
