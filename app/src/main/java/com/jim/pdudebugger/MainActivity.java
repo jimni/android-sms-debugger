@@ -55,6 +55,12 @@ public class MainActivity extends AppCompatActivity {
         for (String savedPduData: loadSavedPdus()) {
             arrayAdapter.insert(renderSavedSms(savedPduData), 0);
         }
+        if (SmsDebugBroadcastReceiver.isExternalStorageWritable()){
+            String logPath = SmsDebugBroadcastReceiver.getLogFile(this.getApplicationContext()).toString();
+            Toast.makeText(this, "Log is written to " + logPath, Toast.LENGTH_LONG).show();
+        } else {
+            Toast.makeText(this, "! Log is disabled !", Toast.LENGTH_LONG).show();
+        }
     }
 
     protected static String getCurrentTimestamp(){
